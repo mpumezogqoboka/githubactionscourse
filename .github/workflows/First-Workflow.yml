@@ -1,0 +1,11 @@
+name: First-Workflow
+on: workflow_dispatch #User can manually trigger the workflow from the GitHub UI
+jobs:
+  first-job:
+    runs-on: macos-latest
+    steps: 
+      - name: Print greeting 
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done, Goodbye!"
+    
